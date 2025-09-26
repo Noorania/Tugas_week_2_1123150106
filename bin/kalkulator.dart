@@ -16,7 +16,7 @@ double _readNumber(String label) {
 
 void main() {
   while (true) {
-    print('\n=== Kalkulator Sederhana ===');
+    print('\n=== Kalkulator Sederhana ===\n');
     print('1) Tambah');
     print('2) Kurang');
     print('3) Kali');
@@ -55,6 +55,22 @@ void main() {
         print('Pilihan tidak dikenal.');
     }
   }
+}
+
+double tambahdong(double a, double b) {
+  return a + b;
+}
+
+double kurangdong(double a, double b) {
+  return a - b;
+}
+
+double kalidong(double a, double b) {
+  return a * b;
+}
+
+double bagidong(double a, double b) {
+ return a/b;
 }
 
 
