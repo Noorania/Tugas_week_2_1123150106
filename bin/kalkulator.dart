@@ -1,6 +1,5 @@
 import 'dart:io';
 
-/// Fungsi untuk membaca input angka dari user
 double _readNumber(String label) {
   while (true) {
     stdout.write('$label: ');
@@ -21,7 +20,7 @@ void main() {
     print('2) Kurang');
     print('3) Kali');
     print('4) Bagi');
-    print('5) Keluar');
+    print('5) Keluar\n');
     stdout.write('Pilih [1-5]: ');
 
     final pilih = stdin.readLineSync()?.trim();
@@ -36,15 +35,19 @@ void main() {
 
     switch (pilih) {
       case '1':
+        double hasil = tambahdong(a, b);
         print('Hasil: ${a + b}');
         break;
       case '2':
+        double hasil = kurangdong(a, b);
         print('Hasil: ${a - b}');
         break;
       case '3':
+        double hasil = kalidong(a, b);
         print('Hasil: ${a * b}');
         break;
       case '4':
+        double hasil = bagidong(a, b);
         if (b == 0) {
           print('Error: Tidak bisa dibagi dengan nol.');
         } else {
